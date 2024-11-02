@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const employee = {
+       name: "Ashrita Gupta",
+        age: 11,
+        salary: 1000,
+      };
+      document.write(
+        employee.name +
+          " is " +
+          employee.age +
+          " year old and getting $ " +
+          employee.salary +
+          "/month"
+      );
+
+      document.write("</br>")
+
+      const emp = new Object();
+        emp.name= "Ashrita Gupta",
+        emp.age= 11,
+        emp.salary= 1000,
+      
+      document.write(
+        emp.name +
+          " is " +
+          emp.age +
+          " year old and getting $ " +
+          emp.salary +
+          "/month"
+      );
+      document.write("</br>")
+
+      function empObj(age,name,salary){
+        this.age= age
+        this.name= name
+        this.salary= salary
+      }
+      const el = new empObj(11,"Ashrita Gupta",1000)
+      
+      document.write(
+        el.name +
+          " is " +
+          el.age +
+          " year old and getting $ " +
+          el.salary +
+          "/month"
+      );
+    </script>
+  </body>
+</html>

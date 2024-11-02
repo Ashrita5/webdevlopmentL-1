@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .i1 {
+      text-align: center;
+    }
+    body {
+      background-image: url("https://images.hdqwalls.com/wallpapers/view-outside-airplane-qa.jpg");
+      background-size: 100%;
+      
+    }
+    .d1 {
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      background-color: rgba(255, 208, 0, 0.84);
+    }
+    .i2 {
+      background-color: rgba(255, 255, 255, 0.085);
+      color: rgba(255, 208, 0, 0.84);
+    }
+    .i3 {
+      background-color: rgba(255, 255, 255, 0.085);
+      width: 200;
+      height: 200;
+    }
+    div {
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-top: 5%;
+      opacity: 90%;
+    }
+    .buttonClr {
+      background-color: rgba(255, 208, 0, 0.84);
+    }
+  </style>
+  <body>
+    <h1 class="i1">Flight Ticket Booking</h1>
+    <div class="d1">
+      <h4>RoundTrip</h4>
+      <h4>One Way</h4>
+      <h4>Multi City</h4>
+    </div>
+    <div class="i2">
+      From:<br />
+      <input type="text" />
+      <br />
+      To:<br />
+      <input type="text" />
+      <br />
+      Depart:<br />
+      <input type="date" />
+      <br />
+
+      Return:<br />
+      <input type="date" />
+      <br />
+      Class:<br />
+      <select name="" id="">
+        <option value="">Economy</option>
+        <option value="">first class</option>
+        <option value="">premium Economy</option>
+        <option value="">buissness class</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" />
+      Flexible with depart date
+      <br />
+      <input type="checkbox" />
+      Flexible with return date
+      <br />
+      <br />
+      adult (+19 yrs)
+      <br />
+      <button>-</button>
+      <button>1</button>
+      <button>+</button>
+      <br />
+      <br />
+      Child (2 - 18 yrs)
+      <br />
+      <button>-</button>
+      <button>1</button>
+      <button>+</button>
+      <br />
+      <br />
+      <button id="i4" class="buttonClr">Search Flight</button>
+    </div>
+  </body>
+</html>

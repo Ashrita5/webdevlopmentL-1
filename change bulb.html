@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .img1 {
+        display: inline;
+      }
+      .img2 {
+        display: none;
+      }
+      .hidden {
+        display: none;
+      }
+      .visible {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body style="text-align: center">
+    <img
+      class="img1"
+      src="https://pics.clipartpng.com/midle/Light_Bulb_PNG_Clip_Art-2109.png"
+      alt=""
+      width="200px"
+    />
+    <img
+      class="img2"
+      src="https://icon-library.com/images/2018/10490914_glowing-bulb-animated-light-bulb-transparent-background-transparent.png"
+      alt=""
+      width="200px"
+      height="250"
+    /><br />
+    <button class="btn" onclick="lightbulb()">turn on</button>
+    
+    <script>
+      function lightbulb() {
+        document.querySelector(".img1").classList.toggle("hidden");
+      document.querySelector(".img2").classList.toggle("visible");
+      }
+    </script>
+  </body>
+</html>

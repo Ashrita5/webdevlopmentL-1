@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    
+    <script>
+
+        var a = 10;
+        var b = 9;
+        
+        document.getElementById("p1").innerHTML =( (a<b) );
+        document.getElementById("p2").innerHTML =( (a>b) );
+        document.getElementById("p3").innerHTML =( (a>=b) );
+        document.getElementById("p4").innerHTML =( (a!==b) );
+
+        document.write(a + b + "<br>");
+        document.write(a - b + "<br>");
+        document.write(a * b + "<br>");
+        document.write(a / b + "<br>");
+        document.write(a % b + "<br>");
+        document.write(a + b + "<br>");
+        a++;
+        document.write(a + "<br>");
+        b--;
+        document.write(b + "<br>");
+
+        document.write((a+=b) + "<br>");
+        document.write((a-=b) + "<br>"); 
+        document.write((a*=b) + "<br>");
+        document.write((a/=b) + "<br>");
+        document.write((a%=b) + "<br>");
+    
+    </script>
+</body>
+</html>

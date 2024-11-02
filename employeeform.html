@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h5 class="id"></h5>
+<h5 class="fullname"></h5>
+<h5 class="age"></h5>
+<h5 class="experience"></h5>
+<h5 class="qualites"></h5>
+<h5 class="jobposition"></h5>
+
+    <script>
+        const employee = new Object();
+        employee.id = 5000 ;
+        employee.fullname = "Ashrita Gupta";
+        employee.age = 11;
+        employee.experience = "designs things for people";
+        employee.qualites = "is very artistic, is A+ student, always hands work in on time, is good at drwing and planning out stuff";
+        employee.jobposition = "Graphic Desiger";
+        document.querySelector(".id").innerHTML=employee.id;
+        document.querySelector(".fullname").innerHTML=employee.fullname;
+        document.querySelector(".age").innerHTML=employee.age;
+        document.querySelector(".experience").innerHTML=employee.experience;
+        document.querySelector(".qualites").innerHTML=employee.qualites;
+        document.querySelector(".jobposition").innerHTML=employee.jobposition;
+    </script>
+</body>
+</html>

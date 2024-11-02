@@ -1,0 +1,11 @@
+h3{
+   background-color: rgb(0, 60, 255);
+   color: azure;
+}
+body{
+    text-align: center;
+}
+
+#message{
+font-size: 45px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("https://www.clipartkey.com/mpngs/m/4-43465_calculator-and-pencil-clipart-featured-illustration-high-school.png");
+        text-align: center;
+      }
+      * {
+        margin: 5px;
+      }
+      .d1 {
+        text-align: center;
+        background-color: white;
+        width: fit-content;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        color: black;
+      }
+      input {
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Percentege Calculator</h1>
+
+    <div class="d1">
+      <input type="number" id="i1" /> is what percentage of <br /><br />
+      <input type="number" id="i2" /><br />
+      <button onclick="percentage()">CALCULATE</button><br />
+      <input type="number" id="answer" />
+    </div>
+    <script>
+      function percentage() {
+        var num1 = document.getElementById("i1").value;
+        var num2 = document.getElementById("i2").value;
+        document.getElementById("answer").value = (num1 / num2) * 100;
+      }
+    </script>
+  </body>
+</html>

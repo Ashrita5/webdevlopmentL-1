@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .d1 {
+        background-color: red;
+        text-align: center;
+        opacity: 70%;
+        color: black;
+        width: 50vw;
+        border-radius: 20px;
+        padding: 30px;
+        margin: auto;
+      }
+      h1 {
+        color: green;
+        text-align: center;
+      }
+      body {
+        background-color: white;
+      }
+      .container {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Screen Information</h1>
+      <div class="d1">
+        <h4 id="heading1"></h4>
+        <h4 id="heading2"></h4>
+        <h4 id="heading5"></h4>
+        <h4 id="heading6"></h4>
+        <h4 id="heading7"></h4>
+        <h4 id="heading8"></h4>
+      </div>
+    </div>
+    <script>
+      document.getElementById("heading1").innerHTML =
+        "screen width:" + window.screen.width;
+      document.getElementById("heading2").innerHTML =
+        "screen height:" + window.screen.height;
+
+      document.getElementById("heading5").innerHTML =
+        "screen availwidth:" + window.screen.availWidth;
+      document.getElementById("heading6").innerHTML =
+        "screen availheight:" + window.screen.availHeight;
+      document.getElementById("heading7").innerHTML =
+        "screen colorDepth:" + window.screen.colorDepth;
+      document.getElementById("heading8").innerHTML =
+        "screen pixelDepth:" + window.screen.pixelDepth;
+    </script>
+  </body>
+</html>

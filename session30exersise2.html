@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+h2{ 
+           color: rgb(232, 158, 22);
+           background-color: white;
+        }
+
+        body{
+            text-align: center;
+            background-color:rgba(255, 180, 41, 0.992)  ;
+        }
+      
+        h3{
+            color: black;
+        }
+       
+        div{
+            margin-top: 10px;
+            padding-top: 2px;
+           padding-bottom: 212px;
+           padding-left: 2%;
+           padding-right: 2%;
+            background-color: lightcoral;
+        }
+        
+
+        .default-text::after{
+        content:" AN ONLINE LEARNING PLATFORM";
+        }
+        
+        .active-text::after{
+        content:" Hello JavaScript! ";
+        }
+    button{
+        background-color: rgba(18, 148, 212, 0.888);
+    }
+    </style>
+</head>
+
+
+<body>
+
+    <div>
+    <h2 style="text-align: center;"><u>CODEYOUNG</u></h2>
+    <hr>
+    <br>
+
+    <h3 id="text1" class="default-text"></h3>
+    <button onclick="textChange()">LEARN MORE!</button>
+    <br><br>
+    <img
+      class="img2"
+      src="https://images.yourstory.com/cs/images/companies/1179181493062957741541445378153149350092481o-1601466396667.png?fm=png&auto=formatar=1:1&mode=fill&fill=solid"
+      alt=""
+      width="300"
+    />
+<br><br>
+</div>
+
+    <script>
+        function textChange(){
+            document.getElementById("text1").innerHTML=""
+                document.getElementById("text1").classList.toggle("active-text");
+                
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>

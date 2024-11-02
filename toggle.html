@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .img1 {
+        display: inline-block;
+      }
+      .img2 {
+        display: none;
+      }
+      .hidden {
+        display: none;
+      }
+      .visible {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="img1"
+      src="https://jooinn.com/images/spring-flower-1.jpg"
+      alt=""
+    />
+    <img
+      class="img2"
+      src="https://tse2.mm.bing.net/th?id=OIP.kp4-u5ZVmQgLZ_O45MoIPgHaEo&pid=Api&P=0&h=220"
+      alt=""
+    />
+    <button onclick="changeImage()">click to change image</button>
+    <script>
+      function changeImage() {
+        var image1 = document.querySelector(".img1");
+        var image2 = document.querySelector(".img2");
+        image1.classList.toggle("hidden");
+        image2.classList.toggle("visible");
+      }
+    </script>
+  </body>
+</html>

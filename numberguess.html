@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="numberguess.css">
+  </head>
+  <body>
+    <h3>Guess The Number Game</h3>
+
+    <h1>Guess A Number Between 1 & 10: </h1>
+    <input type="text" id="guess"  />
+    <button onclick="check()" type="button">check</button>
+    <p id="message"></p>
+    <script>
+      let computerNumber = Math.floor(Math.random() * 10) + 1;
+
+      function check() {
+        let guess = document.getElementById("guess").value;
+        if (guess == computerNumber) {
+          document.getElementById("message").innerHTML =
+            "Congratulations, You won "+ guess +" is the right guess";
+          computerNumber = Math.floor(Math.random() * 10) + 1;
+          document.getElementById("guess").value = "";
+        } else if (guess < computerNumber) {
+          document.getElementById("message").innerHTML = "LOW, Try again";
+        } else if (guess > computerNumber) {
+          document.getElementById("message").innerHTML = "HIGH, Try again";
+        }
+      }
+    </script>
+  </body>
+</html>

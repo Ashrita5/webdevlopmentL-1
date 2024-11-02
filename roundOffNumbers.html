@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+
+      h3 {
+        color: rgb(39, 164, 164);
+      }
+
+      body {
+        background-image: url("https://thumbs.dreamstime.com/b/calculator-background-made-vector-illustration-39034340.jpg");
+
+        background-size: 800px;
+
+        text-align: center;
+      }
+
+      div {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Round OFF calculator</h1>
+      <h3>INPUT THE NUMBER</h3>
+
+      <input type="number" id="i1" />
+
+      <button onclick="roundOff()">click</button>
+    </div>
+    <script>
+      function roundOff() {
+        var num = document.getElementById("i1").value;
+        document.write(Math.round(num));
+      }
+    </script>
+  </body>
+</html>

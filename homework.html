@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .centered {
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center;color: red; background-color: aqua;">Teddy Bear</h2>
+    <p style="text-align: center; color: brown;">Hurry Up Guys!!!</p>
+
+    <div class="container">
+      <img
+        src="https://lzd-img-global.slatic.net/g/p/f21a4d2286651f5b20492bd398d5c632.jpg_720x720q80.jpg"
+        alt="Snow"
+        style="width: 100%"
+      />
+      <div
+        id="textContent"
+        class="centered"
+        onmouseover="mouseOver()"
+        onmouseout="mouseOut()"
+      >
+        At our e-gifting portal, you will get soft toys that could be many
+        diffrent animals or cartoon charecters. We will provide the best quality
+        at a great price!. GoGift.com is a great place to shop for gift to give
+        to close family and friends.
+      </div>
+    </div>
+
+    <script>
+      function mouseOver() {
+        document.getElementById("textContent").style.color = "red";
+      }
+
+      function mouseOut() {
+        document.getElementById("textContent").style.color = "black";
+      }
+
+      function mouseOver1() {
+        document.getElementById("textContent").style.color = "red";
+      }
+
+      function mouseOut1() {
+        document.getElementById("textContent").style.color = "black";
+      }
+    </script>
+  </body>
+</html>

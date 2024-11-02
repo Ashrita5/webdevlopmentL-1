@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="loading()">
+    <p id="p1"></p>
+    <button onclick ="Ashrita(10,20)">click me</button>
+    <button onmouseout="MouseOut()" onmousedown="MouseDown()" onmouseup="MouseUp()">testing</button>
+     
+    <script>
+        
+        function MouseOver(){
+    document.getElementById("btn").style.backgroundColor="blue"
+}
+
+function MouseOut(){
+    document.getElementById("btn").style.backgroundColor="red"
+}
+
+function MouseDown(){
+    document.getElementById("btn").style.backgroundColor="green"
+
+   document.getElementById("btn").style.fontSize="30px"
+    
+}
+
+
+function MouseUp(){
+    document.getElementById("btn").style.backgroundColor="yellow"
+
+    document.getElementById("btn").style.fontSize="20px"
+}
+
+        function Ashrita(a,b){
+            document.getElementById ("p1").
+            innerHTML = (a+b)
+        }
+        function loading(){
+            alert("loading running") ;
+        }
+        
+    </script>
+</body>
+</html>

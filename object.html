@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="id"></h1>
+    <h1 class="name"></h1>
+    <h1 class="age"></h1>
+    <h1 class="grade"></h1>
+    <!-- <script>
+      const student = {
+        id: 101,
+        name: "Ashrita",
+        age: 11,
+        grade: 6,
+      };
+      document.querySelector(".id").innerHTML = student.id;
+      document.querySelector(".name").innerHTML = student.name;
+      document.querySelector(".age").innerHTML = student.age;
+      document.querySelector(".grade").innerHTML = student.grade;
+    </script> -->
+
+    <script>
+      const student = new Object();
+      student.id = 101;
+      student.name = "Ashrita";
+      student.age = 11;
+      student.grade = 6;
+      
+      document.querySelector(".id").innerHTML = student.id;
+      document.querySelector(".name").innerHTML = student.name;
+      document.querySelector(".age").innerHTML = student.age;
+      document.querySelector(".grade").innerHTML = student.grade;
+    </script>
+  </body>
+</html>
